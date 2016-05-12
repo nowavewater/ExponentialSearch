@@ -98,7 +98,7 @@ public class Query {
 	 * the position increment exponentially each iterate.
 	 * @param target long target
 	 * @return The position of line in file if there's a match. Return -1 if can't find a match.
-     */
+	 */
 	private static long exponentialSearch(long target){
 
 		long lower = 0;
@@ -134,8 +134,8 @@ public class Query {
 	 * @param target Target number to query
 	 * @param lower Lower index of binary search.
 	 * @param upper Upper index of binary search.
-     * @return Position of target in the file if found, -1 if not found.
-     */
+	 * @return Position of target in the file if found, -1 if not found.
+     	*/
 	private static long binarySearch(long target, long lower, long upper) {
 		
 		while(upper >= lower) {
@@ -164,7 +164,7 @@ public class Query {
 	 * Get the line number of specific line in file.
 	 * @param Position of line in file.
 	 * @return Line number of the specific line, return -1 if can't read line.
-     */
+     	*/
 	private static long getLineNumber(long position){
 		try {
 			rand.seek(position * Constants.BYTES_OF_LINE);
